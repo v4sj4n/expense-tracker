@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "ES2020", // Compile to a modern JS version
+    "module": "commonjs", // Use CommonJS modules (standard for Node.js)
+    "rootDir": "./src", // Where your TS source code lives
+    "outDir": "./dist", // Where the compiled JS code will go
+
+    /* Strict Type-Checking */
+    "strict": true, // Enable all strict type-checking options
+
+    /* Module Resolution */
+    "esModuleInterop": true, // Allows 'import express from "express"' syntax
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "forceConsistentCasingInFileNames": true // Disallow differently-cased refs to the same file
+  },
+  "include": ["src/**/*"] // Glob pattern to find all your .ts files
+}
