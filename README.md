@@ -79,9 +79,10 @@ cp .env.example .env
 ```env
 MONGODB_URI="mongodb+srv://<user>:<password>@cluster0.vshddaf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 PORT=4444
+RESEND_API_KEY="re_your_api_key_here"
 ```
 
-Replace `<user>` and `<password>` with your MongoDB credentials.
+Replace `<user>` and `<password>` with your MongoDB credentials, and add your Resend API key for email functionality.
 
 5. Start the development server:
 
@@ -175,6 +176,18 @@ If you prefer to use a local MongoDB instance:
 
 ```env
 MONGODB_URI="mongodb://localhost:27017/expense-tracker"
+```
+
+## Resend Setup (Email Functionality)
+
+The application uses Resend for sending emails:
+
+1. Create a free account at [Resend](https://resend.com)
+2. Generate an API key from your dashboard
+3. Add the API key to `backend/.env`:
+
+```env
+RESEND_API_KEY="re_your_api_key_here"
 ```
 
 ## Development Tips
